@@ -37,4 +37,13 @@ public class LlamadaTest {
     Assertions.assertEquals(20.0, llamada.costo());
   }
 
-}
+  @Test
+  public void testCostoLlamadaExternaAZarate() {
+    Externa llamada = new Externa(this.duracion, Region.ZARATE);
+    Assertions.assertEquals(30.0, llamada.costo());
+  }
+  @Test
+  public void testCostoLlamadaExternaARusia() {
+    Externa llamada = new Externa(this.duracion, Region.RUSIA);
+    Assertions.assertEquals(370.0, llamada.costo());
+  }}
