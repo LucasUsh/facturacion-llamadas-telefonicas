@@ -34,6 +34,14 @@ public class Factura {
     return costo;
   }
 
+  public Month getMes() {
+    return this.mes;
+  }
+
+  public double getAbonoBase() {
+    return this.abonoBase;
+  }
+
   Factura(double abonoBase, Month mes) {
     this.abonoBase = abonoBase;
     this.mes = mes;
