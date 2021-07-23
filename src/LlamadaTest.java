@@ -46,4 +46,5 @@ public class LlamadaTest {
   public void testCostoLlamadaExternaARusia() {
     Externa llamada = new Externa(this.duracion, Region.RUSIA);
     Assertions.assertEquals(370.0, llamada.costo());
-  }}
+  }
+}
